@@ -3,14 +3,14 @@
 
 We are going to cover:
 
-- [Introduction to JavaScript Programming Language](https://blogs.crtil.com/introduction-to-javaScript)
+- [Javascript Statements, Expressions, Changing variables, and String](https://blogs.crtil.com/expressions-changing-variables-and-string-javaScript)
 - Exercises
 
 ---
 
 ## Assignments:
 
-**Assignment 1:** [PB-console](https://classroom.github.com/a/kmD65WSe)
+**Assignment 1:** []()
 
 
 
@@ -18,4 +18,4 @@ We are going to cover:
 
 ### Resources:
 
-- [Introduction to JavaScript Programming Language](https://blogs.crtil.com/introduction-to-javaScript)
+- [Javascript Statements, Expressions, Changing variables, and String](https://blogs.crtil.com/expressions-changing-variables-and-string-javaScript)
