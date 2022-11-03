@@ -1,5 +1,5 @@
 
-# Introduction to JavaScript
+# Javascript Statements, Expressions, Changing variables, and String
 
 We are going to cover:
 
