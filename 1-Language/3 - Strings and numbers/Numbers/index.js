@@ -11,13 +11,13 @@ const tax = 4;
 
 const finalPrice = price + tax;
 
+console.log("final price:", finalPrice); // "224"
+
 const firstName = "Iva";
 const lastName = "Sucic";
 const fullName = firstName + " " + lastName;
 
 console.log(fullName);
-
-console.log("final price:", finalPrice); // "224"
 
 /**
  * Integers and floats
@@ -44,7 +44,7 @@ const salary = "234.254";
 const address = "232 Miami Hellersdorf";
 
 const ageToInteger = parseInt(age);
-console.log("age to number:", ageToInteger);
+console.log("age to number:", ageToInteger); // 22
 
 const salaryToInteger = parseInt(salary);
 console.log("salary to integer", salaryToInteger);
