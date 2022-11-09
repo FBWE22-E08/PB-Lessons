@@ -44,3 +44,18 @@ console.log("students ==> ", students);
 students.splice(1, 0, 88, "Pilar");
 
 console.log("students ==> ", students); // [ 'Max', 88, 'Pilar', 'Tommy', 'Alex' ]
+
+console.log("#############################");
+
+// slice
+// .
+// arr.slice( beginIndex ,endIndex(+1)  )
+//               0     1    2    3
+const myArray = ["t", "e", "s", "t"];
+
+console.log("myArray.slice() => ", myArray.slice(1, 3)); // ['e', 's']
+
+// slice with string
+// index        0 2  5
+const text_3 = "I like javascript";
+console.log("text_3.slice() => ", text_3.slice(2, 6)); // like
