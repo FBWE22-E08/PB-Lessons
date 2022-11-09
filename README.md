@@ -6,9 +6,9 @@
 
 ### Programming Basics (PB) Chapters:
 
-1.  [Language]()()
-2.  [Program]() ()
+1.  [Language]()
+2.  [Program]() 
 3.  [Functions-I]()
-4.  [Data Structure]() ()
-5.  [Functions-II]() ()
-6.  [Classes]() ()
+4.  [Data Structure]() 
+5.  [Functions-II]()
+6.  [Classes]()
