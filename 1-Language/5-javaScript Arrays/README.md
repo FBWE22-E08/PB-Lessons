@@ -10,6 +10,7 @@ We are going to cover:
 ## Assignments:
 
 **Assignment 1:** [PB-datastructure-array](https://classroom.github.com/a/4Dr4072r)
+
 **Assignment 2:** [PB-arrays-pt1](https://classroom.github.com/a/JpFn6vDj)
 
 ---
