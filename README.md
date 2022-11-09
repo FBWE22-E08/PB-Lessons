@@ -6,9 +6,9 @@
 
 ### Programming Basics (PB) Chapters:
 
-1.  [Boilerplate]()()
-2.  [Content]() ()
-3.  [Box-Model]()
-4.  [UI / UX]() ()
-5.  [Data]() ()
-6.  [Responsivity]() ()
+1.  [Language]()()
+2.  [Program]() ()
+3.  [Functions-I]()
+4.  [Data Structure]() ()
+5.  [Functions-II]() ()
+6.  [Classes]() ()
