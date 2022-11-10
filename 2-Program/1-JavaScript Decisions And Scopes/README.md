@@ -19,6 +19,8 @@ We are going to cover:
 
 **Assignment 5:** [PB-Program-ternary-operator-exercise](https://classroom.github.com/a/WfzX4zz8)
 
+**Assignment 6:** [PB-program-blockscope](https://classroom.github.com/a/i7cXJZal)
+
 ---
 
 ### Resources:
