@@ -1,15 +1,3 @@
-// First iteration
-// let i = 0
-// 0 < 5
-// Second iteration
-// let i = 1;
-// 1 < 5
-// Third iteration
-// let i = 2
-// Sixth iteration
-// let i = 5
-//  5 < 5
-
 // Incrementing the let i;
 for (let i = 0; i <= 5; i++) {
   //   console.log("hi and i is", i);
@@ -75,13 +63,61 @@ const userNames = ["Maru", "Katys", "Goran"]; // 3
 for (let i = 0; i < userNames.length; i++) {
   const user = userNames[i];
   for (let j = 0; j < user.length; j++) {
-    console.log(user[j]);
+    // console.log(user[j]);
   }
 }
 
 const first = userNames[0]; // Maru
-console.log(first);
-console.log(first[0]); // M
-console.log(first[1]); // a
-console.log(first[2]); // r
-console.log(first[3]); // u
+// console.log(first);
+// console.log(first[0]); // M
+// console.log(first[1]); // a
+// console.log(first[2]); // r
+// console.log(first[3]); // u
+
+const sets = 4;
+const repetitions = 5;
+
+// for loop
+
+for (let i = 0; i < sets; i++) {
+  //   console.log("set:", i);
+  for (let j = 0; j < repetitions; j++) {
+    // console.log("Lifting weight:", j);
+  }
+}
+
+// while loop - Complicated version
+let amount = 0;
+while (amount < 50) {
+  const num = Math.floor(Math.random() * 10);
+  if (amount + num > 50) {
+    break;
+  }
+  amount += num;
+  console.log("amount", amount);
+}
+
+// Simple
+let sum = 0;
+while (sum < 50) {
+  sum += Math.floor(Math.random() * 10);
+  console.log(sum, "the sum");
+}
+
+let x = 100;
+//   run the code only if 100 is smaller than 10
+while (x < 10) {
+  console.log("While loop is running");
+}
+
+// do while loop
+do {
+  console.log("Do While loop is running");
+} while (x < 10);
+
+let y = 60;
+
+do {
+  console.log("this is the y", y);
+  y++;
+} while (y < 5);
