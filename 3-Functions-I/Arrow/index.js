@@ -32,3 +32,7 @@ const greeting =
       };
 
 greeting();
+
+const getUser = () => {
+  console.log("User is John");
+};

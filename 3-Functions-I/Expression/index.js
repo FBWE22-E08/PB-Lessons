@@ -32,7 +32,14 @@ sum(1, 2); // 3
 // Function expressions with ternary operators
 const age = 22;
 
-const greeting = age < 18 ? function () {} : function () {};
+const greeting =
+  age < 18
+    ? function () {
+        console.log("hi buddy");
+      }
+    : function () {
+        console.log("greetings");
+      };
 
 greeting(23); // greetings
 

@@ -34,7 +34,7 @@ showMessage("John", "Hi there");
 showMessage("Anna", "Well hi there as well!");
 showMessage("Steve", "Hello");
 
-// Expecting two parameters
+// Expecting two parameters - using fallback values
 function chat(name = "Missing user", message = "No message") {
   console.log(`${name}: ${message}`);
 }
