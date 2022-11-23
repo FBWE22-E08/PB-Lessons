@@ -24,25 +24,25 @@ const getMonthName = (number) => {
     return "Invalid number";
   }
 
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
+  const months = {
+    1: "January",
+    2: "February",
+    3: "March",
+    4: "April",
+    5: "May",
+    6: "June",
+    7: "July",
+    8: "August",
+    9: "September",
+    10: "October",
+    11: "November",
+    12: "December",
+  };
 
-  return months[number - 1];
+  return months[number];
 };
 
-// console.log(getMonthName(1)); // January
+console.log(getMonthName(11)); // January
 
 // 3. Create a function named unique that takes an array of numbers and returns the unique numbers.
 
@@ -69,22 +69,29 @@ const unique = (nums) => {
 // PS: for your program to work properly, the function should replace all 'a's with 4, 'e's with 3, 'i's with 1, 'o's with 0, and 's's with 5.
 
 const code = (string) => {
-  const characters = string.split("");
+  debugger;
+  //   Split the string parameter into an array of characters/letters
+  const characters = string.split(""); // ["j", "4", "v", "4", "5", "c", "r", "1", "p", "t"];
 
+  //   Characters which need to be replaced if they exist in our string
   const hackLetters = ["a", "e", "i", "o", "s"];
+
+  //   Characters with which we need to replace the hackLetters
   const replacemenetLetters = ["4", "3", "1", "0", "5"];
 
   for (let i = 0; i < characters.length; i++) {
+    // Checking if the current character is one of hackLetters
     const index = hackLetters.indexOf(characters[i]);
-    // If I have to replace the character
+    // If our character is one of the hackLetters
     if (index !== -1) {
+      // Replace that character with the correct replacement
       characters[i] = replacemenetLetters[index];
     }
   }
 
-  return characters.join("");
+  //   Join our array of characters into a string again
+  return characters.join(""); // j4v45cr1pt
 };
-
 // Examples:
 console.log(code("javascript is cool")); // ➞ "j4v45cr1pt 15 c00l"
 console.log(code("programming is fun")); // ➞ "pr0gr4mm1ng 15 fun"
