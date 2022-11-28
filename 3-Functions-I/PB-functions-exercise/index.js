@@ -105,10 +105,6 @@ const calcBaseToExponentUsingMath = (base, exponent) => {
 // **7. Dog Years.**
 // Create a function named `dogAge` which calculates how old a dog is in dog years. The function should accept one argument that is the dog's age in human years. Calculate the dog's age in dog years based on the assumtion that 1 human year = 7 dog years. The function should return a string like in the example below.
 
-// Example:
-
-// - `dogAge(4)` ➞ "Your doggo is 28 years old in dog years!"
-
 const dogAge = (age) => {
   const dogsAge = age * 7;
   return `Your doggo is ${dogsAge} years old in dog years!`;
@@ -116,3 +112,58 @@ const dogAge = (age) => {
 
 console.log(dogAge(15));
 console.log(dogAge(10));
+
+//  **8. A Lifetime Supply...**
+// The function should accept two arguments: current age and amount per day.
+// The function should calculate the amount that will be consumed for the rest of your life given a constant maximum age of 100. The function should return a string like in the example below.
+
+const calcLifetimeSupply = (age, amountPerDay) => {
+  const MAX_AGE = 100;
+  // 1. How many years I have left
+  // 2. Transform years left into days
+  // 3. Multiply days left with amount per day
+  const yearsLeft = MAX_AGE - age; // 80
+  const daysLeft = yearsLeft * 365;
+  const result = daysLeft * amountPerDay;
+  return `The snack company should provide you with ${result} units, until you are a ripe old age of ${MAX_AGE}. Happy snacking!`;
+};
+
+console.log(calcLifetimeSupply(20, 2));
+
+// **Bonus:**
+
+const calcLifetimeSupplyBonus = (age, amountPerDay, maxAge) => {
+  const yearsLeft = maxAge - age; // 80
+  const daysLeft = yearsLeft * 365;
+  const result = Math.round(daysLeft * amountPerDay);
+
+  return `The snack company should provide you with ${result} units, until you are a ripe old age of ${maxAge}. Happy snacking!`;
+};
+
+console.log(calcLifetimeSupplyBonus(40, 1, 41));
+
+// Math.ceil 1.1 = > 2
+// Math.floor 1.9 => 1
+// Math.round 1.5 => 2, 1.4 => 1
+
+// **9. Where's Waldo?**
+// Create a function named `isWaldoHere` that takes a string and returns `true` if Waldo is found, and `false` if he's not.
+
+// Examples:
+
+// - `isWaldoHere("is there a wal here?")` ➞ false
+// - `isWaldoHere("I found you Waldo!")` ➞ true
+// - `isWaldoHere("Wait, don't you mean Wally?")` ➞ false
+// - `isWaldoHere("waldo is here")` ➞ true
+
+const isWaldoHere = (str) => {
+  if (str.toLowerCase().includes("waldo")) {
+    return true;
+  }
+  return false;
+};
+
+const isWaldoHereShort = (str) => str.toLowerCase().includes("waldo");
+
+console.log(isWaldoHere("WALDO"));
+console.log(isWaldoHereShort("WALDO"));
