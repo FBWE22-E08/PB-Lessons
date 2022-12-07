@@ -21,6 +21,6 @@ function makeCounter(num) {
 
 const counter = makeCounter(10);
 
-console.log("counter(5) => ", counter(5)); // 10
-console.log(counter()); // 11
+console.log("counter(5) => ", counter(5)); // 16
 console.log(counter()); // 12
+console.log(counter()); // 13
