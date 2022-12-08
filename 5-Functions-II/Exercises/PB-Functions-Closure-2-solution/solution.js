@@ -1,13 +1,14 @@
 // 1. What’s the result of executing this code and why.
-console.log("Question 1")
-function closureOne() {
-    console.log(a);
-    console.log(foo());
 
-    var a = 1;
-    function foo() {
-        return 2;
-    }
+console.log("Question 1");
+function closureOne() {
+  console.log(a);
+  console.log(foo());
+
+  var a = 1;
+  function foo() {
+    return 2;
+  }
 }
 
 closureOne();
@@ -27,22 +28,22 @@ closureOne();
 // ************************************************************************* //
 
 // 2. What is the result?
-console.log("Question 2")
-var a = 1; 
+console.log("Question 2");
+var a = 1;
 
 function closureTwo(number) {
-    function inner(input) {
-        return a;
-    }
+  function inner(input) {
+    return a;
+  }
 
-    a = 5;
+  a = 5;
 
-    return inner;
+  return inner;
 }
 
 var resultOfClosureTwo = closureTwo(9);
 var result = resultOfClosureTwo(2);
-console.log(result)
+console.log(result); // 5
 
 /*
     RESULT
@@ -61,28 +62,29 @@ console.log(result)
 // ************************************************************************* //
 
 // 3. What is the result of the following code? Explain your answer
-console.log("Question 3")
-var fullname = 'John Doe';
+console.log("Question 3");
+var fullname = "John Doe";
 var user = {
-    fullname: 'Colin Ihrig',
-    name: {
-        fullname: 'Aurelio De Rosa',
-        getFullname: function() {
-            return this.fullname;
-        }
-    }
+  fullname: "Colin Ihrig",
+  name: {
+    fullname: "Aurelio De Rosa",
+    getFullname: function () {
+      console.log("getFullname  => ", this);
+      return this.fullname;
+    },
+  },
 };
 
 console.log(user.name.getFullname());
 
 var test = user.name.getFullname;
-console.log(test())
+console.log(test());
 
 /*
     RESULT
     Question 3
     Aurelio De Rosa
-    undefined
+    John Doe
 
     EXPLANATION
     During first run, the "this" refers to `user.name`; "Aurelio De Rosa".
@@ -97,14 +99,14 @@ console.log(test())
 // ************************************************************************* //
 
 // 4. What will you see in the console for the following example?
-console.log("Question 4")
+console.log("Question 4");
 var interesting = 1;
 function doSomeStuff() {
-    interesting = 10;
-    return;
-    function interesting() {}
-} 
-doSomeStuff(); 
+  interesting = 10;
+  return;
+  function interesting() {}
+}
+doSomeStuff();
 console.log(interesting);
 
 /*
