@@ -9,7 +9,7 @@ class Employee {
 
   generatePaySlip() {
     const monthlySalary = this.salary / 12;
-    return `Employee ID: ${this.id} 
+    return `Employee ID: ${this.id}
 Name: ${this.firstName} ${this.lastName}
 Tax ID: ${this.taxId}
 Pay: ${monthlySalary}`;
