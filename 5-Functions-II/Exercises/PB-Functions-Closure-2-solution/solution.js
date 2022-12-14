@@ -84,7 +84,7 @@ console.log(test());
     RESULT
     Question 3
     Aurelio De Rosa
-    John Doe
+    undefined
 
     EXPLANATION
     During first run, the "this" refers to `user.name`; "Aurelio De Rosa".
